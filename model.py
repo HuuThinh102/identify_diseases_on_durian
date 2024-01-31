@@ -1,3 +1,10 @@
+import subprocess
+# Đường dẫn đến file requirements.txt
+requirements_file_path = "path/to/requirements.txt"  # Thay đổi đường dẫn tương ứng
+
+# Sử dụng pip để cài đặt các thư viện từ file requirements.txt
+subprocess.run(["pip", "install", "-r", requirements_file_path], check=True)
+
 import numpy as np
 from PIL import Image, ImageOps
 import streamlit as st
